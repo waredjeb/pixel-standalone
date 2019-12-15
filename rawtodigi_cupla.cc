@@ -504,7 +504,7 @@ namespace cupla {
         useQualityInfo,
         includeErrors,
         debug);
-    cudaCheck(cudaGetLastError());
+    // cudaCheck(cudaGetLastError());// It blocks the cupla execution (??)
   }     
   
 } // end namespace cupla
